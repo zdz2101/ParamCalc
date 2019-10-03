@@ -1,14 +1,13 @@
 #' Single Arm Calculator (Non-Adaptive)
 #'
-#' This function to calculate n given a desired alpha and power in a non-adaptive setting. By default considers the 25% vs 40% case for alpha = 0.05 and power = 0.80
-#' @soc Standard of care efficacy
-#' @exp Expected experimental treatment efficacy
-#' @alpha Desired alpha level
-#' @pwr Desired power
-#'
-#' @example
+#' @param soc Standard of care efficacy (0 - 1 value)
+#' @param exp Expected experimental treatment efficacy (0 - 1 value)
+#' @param alpha Desired alpha level (0 - 1 value)
+#' @param pwr Desired power (0 - 1 value)
+#' @return Displays the necessary amount of patients needed for the sample size to satisfy user defined parameters.
+#' @examples
+#' library(ParamCalc)
 #' single_poc()
-#' single_poc(soc = 0.30, exp = 0.42, alpha = 0.03, pwr = 0.85)
 
 single_poc <- function(soc = 0.25, exp = 0.40 , alpha = 0.05, pwr = 0.80){
   cond1 <- FALSE

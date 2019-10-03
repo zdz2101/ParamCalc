@@ -32,7 +32,7 @@
 
 <meta property="og:title" content="Single Arm Calculator (Non-Adaptive) — single_poc" />
 
-<meta property="og:description" content="This function to calculate n given a desired alpha and power in a non-adaptive setting. By default considers the 25" />
+<meta property="og:description" content="Single Arm Calculator (Non-Adaptive)" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -101,18 +101,51 @@
 
     <div class="ref-description">
     
-    <p>This function to calculate n given a desired alpha and power in a non-adaptive setting. By default considers the 25<!-- % vs 40% case for alpha = 0.05 and power = 0.80 --></p>
+    <p>Single Arm Calculator (Non-Adaptive)</p>
     
     </div>
 
     <pre class="usage"><span class='fu'>single_poc</span>(<span class='kw'>soc</span> <span class='kw'>=</span> <span class='fl'>0.25</span>, <span class='kw'>exp</span> <span class='kw'>=</span> <span class='fl'>0.4</span>, <span class='kw'>alpha</span> <span class='kw'>=</span> <span class='fl'>0.05</span>, <span class='kw'>pwr</span> <span class='kw'>=</span> <span class='fl'>0.8</span>)</pre>
-        
+    
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>soc</th>
+      <td><p>Standard of care efficacy (0 - 1 value)</p></td>
+    </tr>
+    <tr>
+      <th>exp</th>
+      <td><p>Expected experimental treatment efficacy (0 - 1 value)</p></td>
+    </tr>
+    <tr>
+      <th>alpha</th>
+      <td><p>Desired alpha level (0 - 1 value)</p></td>
+    </tr>
+    <tr>
+      <th>pwr</th>
+      <td><p>Desired power (0 - 1 value)</p></td>
+    </tr>
+    </table>
+    
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
+    <p>Displays the necessary amount of patients needed for the sample size to satisfy user defined parameters.</p>
+    
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/library'>library</a></span>(<span class='no'>ParamCalc</span>)
+<span class='fu'>single_poc</span>()</div><div class='output co'>#&gt; <span class='error'>Error in single_poc(): could not find function "single_poc"</span></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-                </ul>
+      <li><a href="#arguments">Arguments</a></li>
+      
+      <li><a href="#value">Value</a></li>
+      
+      <li><a href="#examples">Examples</a></li>
+    </ul>
 
   </div>
 </div>

@@ -6,6 +6,22 @@
 \usage{
 single_poc(soc = 0.25, exp = 0.4, alpha = 0.05, pwr = 0.8)
 }
+\arguments{
+\item{soc}{Standard of care efficacy (0 - 1 value)}
+
+\item{exp}{Expected experimental treatment efficacy (0 - 1 value)}
+
+\item{alpha}{Desired alpha level (0 - 1 value)}
+
+\item{pwr}{Desired power (0 - 1 value)}
+}
+\value{
+Displays the necessary amount of patients needed for the sample size to satisfy user defined parameters.
+}
 \description{
-This function to calculate n given a desired alpha and power in a non-adaptive setting. By default considers the 25% vs 40% case for alpha = 0.05 and power = 0.80
+Single Arm Calculator (Non-Adaptive)
+}
+\examples{
+library(ParamCalc)
+single_poc()
 }
