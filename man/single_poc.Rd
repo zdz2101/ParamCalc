@@ -24,4 +24,5 @@ Single Arm Calculator (Non-Adaptive)
 \examples{
 library(ParamCalc)
 single_poc()
+single_poc(soc = 0.27, exp = 0.36, alpha = 0.03, pwr = 0.85)
 }

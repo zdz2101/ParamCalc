@@ -5,9 +5,11 @@
 #' @param alpha Desired alpha level (0 - 1 value)
 #' @param pwr Desired power (0 - 1 value)
 #' @return Displays the necessary amount of patients needed for the sample size to satisfy user defined parameters.
+#' @export
 #' @examples
 #' library(ParamCalc)
 #' single_poc()
+#' single_poc(soc = 0.27, exp = 0.36, alpha = 0.03, pwr = 0.85)
 
 single_poc <- function(soc = 0.25, exp = 0.40 , alpha = 0.05, pwr = 0.80){
   cond1 <- FALSE
