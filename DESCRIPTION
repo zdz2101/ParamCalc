@@ -12,4 +12,5 @@ Suggests:
   tidyverse,
   readxl,
   rmarkdown
-VignetteBuilder: knitr
+Require:
+  stats
