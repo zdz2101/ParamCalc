@@ -1,16 +1,17 @@
-
+---
+output: github_document
+---
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-Installation
-------------
+
+## Installation
 
 Installation directions for development version
-
-``` r
+```{r, eval = FALSE}
 # install.packages("devtools")
 devtools::install_github("zdz2101/ParamCalc")
 ```
 
-Usage
------
+
+## Usage
 
 Show an example of the package and its workings
