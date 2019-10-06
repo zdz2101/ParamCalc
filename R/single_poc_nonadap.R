@@ -28,5 +28,5 @@ single_poc <- function(soc = 0.25, exp = 0.40 , alpha = 0.05, pwr = 0.80){
     }
     n <- n + 1
   }
-  print(paste(paste(paste(paste("Need", z_temp), "patient responses from sample size"), n)))
+  print(paste(paste(paste(paste("Sample size:", n), "; with expected patient responses from"), z_temp)))
 }

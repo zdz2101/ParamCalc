@@ -13,4 +13,6 @@ Suggests:
   readxl,
   rmarkdown
 Require:
-  stats
+  plot.matrix,
+  knitr,
+  scales
